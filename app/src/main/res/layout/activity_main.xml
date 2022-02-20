@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginTop="50mm"
+        android:layout_marginTop="70mm"
         android:text="Enter your code to start"
         android:textStyle="bold" />
 
@@ -45,12 +45,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="189dp"
+        android:layout_width="300dp"
         android:layout_height="205dp"
         android:layout_alignWithParentIfMissing="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/logo_size_invert" />
+        android:maxWidth="200dp"
+        app:srcCompat="@drawable/screen_shot_2022_02_19_at_10_01_34_pm" />
 
 
 </RelativeLayout>
