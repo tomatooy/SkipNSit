@@ -18,22 +18,17 @@ import android.content.DialogInterface;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton EnterCode;
-<<<<<<< HEAD
-    private ArrayList<String> loginCodes;
-=======
     EditText code;
     private ArrayList<String> loginCodes;
 
->>>>>>> Ouyang
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-        EnterCode= findViewById(R.id.imageButton2);
-=======
+
         EnterCode=(ImageButton) findViewById(R.id.imageButton2);
->>>>>>> Ouyang
+
         loginCodes = new ArrayList<>();
         loginCodes.add("123456");
         EnterCode.setOnClickListener(new View.OnClickListener() {
@@ -58,20 +53,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
-<<<<<<< HEAD
 
-=======
-    private void authentication () {
-        EditText code =  findViewById(R.id.editTextTextPassword);
-        String temp = code.getText().toString();
-        if (loginCodes.contains(temp)) {
-            openActivity2();
-        } else {
-            promptUser();
-        }
-
-    }
->>>>>>> Ouyang
     private void promptUser() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setMessage("You have entered the wrong code.");
@@ -91,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = alertDialogBuilder.create();
         alert.show();
     }
-<<<<<<< HEAD
-}
-=======
-
 
 }
->>>>>>> Ouyang
+
+
+
+}
+
